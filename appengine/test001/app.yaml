@@ -18,5 +18,4 @@ threadsafe: true
 
 handlers:
 - url: /.*
-  script: auto
-#  script: main.app
+  script: main.app
