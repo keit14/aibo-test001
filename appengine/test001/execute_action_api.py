@@ -54,6 +54,12 @@ def do_action(api_name, arguments):
 #    else :
 #        print("execute_action_api.py <action api name> <parameters>")
 #        exit(1)
+if __name__ == '__main__':
+    length = len(sys.argv)
+    if length == 3:
+        do_action(sys.argv[1], sys.argv[2])
+    else :
+        print("execute_action_api.py <action api name> <parameters>")
 
-do_action('play_motion','{"Category":"highFive","Mode":"NONE"}');
-do_action('play_motion','{"Category":"belch","Mode":"NONE"}');
+#do_action('play_motion','{"Category":"highFive","Mode":"NONE"}');
+#do_action('play_motion','{"Category":"belch","Mode":"NONE"}');
